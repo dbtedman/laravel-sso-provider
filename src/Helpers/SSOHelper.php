@@ -2,6 +2,20 @@
 namespace Helpers;
 
 /**
+ * This file is available on all app server environments.
+ *
+ * We use two methods defined in this file:
+ *   singleSignon()
+ *   getPSLogoutByEnv()
+ */
+$ssoFunctions = $_SERVER["DOCUMENT_ROOT"] . "/../security key/.pingsinglesignon.php";
+
+// Check file to avoid errors when running cli operations.
+if (file_exists($ssoFunctions)) {
+  include($ssoFunctions);
+}
+
+/**
  * Handles direct interaction with server side SSO functionality.
  */
 class SSOHelper
