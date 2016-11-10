@@ -1,0 +1,8 @@
+{
+  "name": "dbtedman/laravel-sso-provider",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Testing...\""
+  }
+}
