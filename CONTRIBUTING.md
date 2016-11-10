@@ -9,11 +9,17 @@ A guide for contributing to this repository which extends the [README.md](README
 
 ## Dependencies
 
-*Content to come.*
+* php (v5.6)
 
 ## Testing
 
 See [https://travis-ci.org/dbtedman/laravel-sso-provider](https://travis-ci.org/dbtedman/laravel-sso-provider) for CI results, run on each commit.
+
+## Unit Testing
+
+```bash
+composer run test
+```
 
 ## Releasing
 
