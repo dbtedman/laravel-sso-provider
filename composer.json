@@ -3,7 +3,7 @@
   "description": "",
   "license": "MIT",
   "scripts": {
-    "test": "vendor/bin/phpunit --bootstrap=tests/bootstrap.php tests/"
+    "test": "vendor/bin/phpunit --debug --bootstrap=tests/bootstrap.php tests/"
   },
   "require-dev": {
     "php": "5.6.*",
@@ -11,7 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "helpers\\": "src/helpers/"
+      "Helpers\\": "src/Helpers/"
     }
   }
 }

@@ -10,6 +10,7 @@ A guide for contributing to this repository which extends the [README.md](README
 ## Dependencies
 
 * php (v5.6)
+* composer
 
 ## Testing
 
