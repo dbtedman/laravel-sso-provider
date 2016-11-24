@@ -5,7 +5,7 @@ A guide for contributing to this repository which extends the [README.md](README
 
 ## Contributors
 
-* [Daniel Tedman](http://danieltedman.com)
+* [Daniel Tedman](https://danieltedman.com)
 
 ## Dependencies
 
