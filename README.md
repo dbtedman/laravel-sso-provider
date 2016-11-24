@@ -1,5 +1,5 @@
 
-# Laravel SSO Provider `v0.0.1` [![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider)
+# Laravel SSO Provider `v0.0.1` [![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider) [![Packagist](https://img.shields.io/packagist/v/dbtedman/laravel-sso-provider.svg)](https://packagist.org/packages/dbtedman/laravel-sso-provider)
 
 Provides custom SSO integration to Laravel 5 applications.
 
