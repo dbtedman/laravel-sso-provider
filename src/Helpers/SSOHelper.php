@@ -7,12 +7,13 @@ namespace Helpers;
  * We use two methods defined in this file:
  *   singleSignon()
  *   getPSLogoutByEnv()
+ *   singleSignonRedirect()
  */
 $ssoFunctions = $_SERVER["DOCUMENT_ROOT"] . "/../security key/.pingsinglesignon.php";
 
 // Check file to avoid errors when running cli operations.
 if (file_exists($ssoFunctions)) {
-  include($ssoFunctions);
+  include_once $ssoFunctions;
 }
 
 /**
@@ -75,13 +76,14 @@ class SSOHelper
   {
     $sso = new SSOHelper();
 
-    list($ok, $result) = singleSignon(1, true); // Defined in external .pingsinglesignon.php file.
+    if (isset($_GET["REF"]) && isset($_COOKIE["setSSO"])) {
+      list($sso->ok, $sso->result) = singleSignon(1, true);
 
-    $sso->ok = $ok;
+    } else {
+      singleSignonRedirect(1, SSOHelper::getCurrentURL());
+    }
 
     if ($sso->ok) {
-      $sso->result = $result;
-
       // Extract required properties.
       $sso->staffNumber = $sso->result["userid"];
       $sso->email = $sso->result["raw"]["mail"];
@@ -120,5 +122,21 @@ class SSOHelper
     if (in_array(self::$STAFF_MEMBERSHIP, $this->memberships)) {
       $this->isStaffMember = true;
     }
+  }
+
+  /**
+   * @return string
+   */
+  private static function getCurrentURL()
+  {
+    $currentURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
+    $currentURL .= $_SERVER["HTTP_HOST"];
+
+    if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443") {
+      $currentURL .= ":" . $_SERVER["SERVER_PORT"];
+    }
+    $currentURL .= $_SERVER["REQUEST_URI"];
+
+    return $currentURL;
   }
 }
