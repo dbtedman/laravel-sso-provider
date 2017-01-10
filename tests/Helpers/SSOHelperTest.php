@@ -1,5 +1,5 @@
 <?php
-namespace Helpers;
+namespace DBTedman\SSOProvider\Helpers;
 
 use PHPUnit\Framework\TestCase;
 

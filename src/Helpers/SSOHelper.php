@@ -1,5 +1,5 @@
 <?php
-namespace Helpers;
+namespace DBTedman\SSOProvider\Helpers;
 
 /**
  * This file is available on all app server environments.
