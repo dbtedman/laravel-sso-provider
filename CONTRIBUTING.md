@@ -24,4 +24,4 @@ composer run test
 
 ## Releasing
 
-*Content to come.*
+Releases are automatically deployed to [Packagist](https://packagist.org/packages/dbtedman/laravel-sso-provider) when releases are tagged on [Github](https://github.com/dbtedman/laravel-sso-provider).
