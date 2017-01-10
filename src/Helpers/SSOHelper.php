@@ -125,12 +125,16 @@ class SSOHelper
   }
 
   /**
-   * @return string
+   * @return string Full current URL path.
    */
   private static function getCurrentURL()
   {
     $currentURL = (@$_SERVER["HTTPS"] == "on") ? "https://" : "http://";
     $currentURL .= $_SERVER["HTTP_HOST"];
+
+    // Now extract just scheme and host, removing port that we will add back selectively after.
+    $parts = parse_url($currentURL);
+    $currentURL = $parts["scheme"] . "://" . $parts["host"];
 
     if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443") {
       $currentURL .= ":" . $_SERVER["SERVER_PORT"];
