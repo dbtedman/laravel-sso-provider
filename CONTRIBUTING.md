@@ -9,8 +9,9 @@ A guide for contributing to this repository which extends the [README.md](README
 
 ## Dependencies
 
-* php (v5.6)
-* composer
+* PHP `5.* >= 5.5`
+* Composer `1.4`
+* Laravel `5.2` - *May work with other versions but has not been tested with them.*
 
 ## Testing
 
