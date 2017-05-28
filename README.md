@@ -7,7 +7,7 @@ Provides custom SSO integration to [Laravel 5](https://laravel.com) applications
 
 ## Where do I start?
 
-1\. Require the `dbtedman/laravel-sso-provider` library.
+1\. Require the `dbtedman/laravel-sso-provider` package.
 
 ```bash
 composer require dbtedman/laravel-sso-provider
@@ -43,6 +43,8 @@ if ($sso->valid() && $sso->isStaffMember) {
   }
 }
 ```
+
+---
 
 Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
 
