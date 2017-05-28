@@ -1,8 +1,8 @@
 {
   "name": "dbtedman/laravel-sso-provider",
-  "description": "",
+  "description": "Provides custom SSO integration to Laravel 5 applications.",
   "license": "MIT",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "test": "vendor/bin/phpunit --debug --bootstrap=tests/bootstrap.php tests/"
   },

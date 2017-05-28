@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider) [![Packagist](https://img.shields.io/packagist/v/dbtedman/laravel-sso-provider.svg)](https://packagist.org/packages/dbtedman/laravel-sso-provider) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-Provides custom SSO integration to Laravel 5 applications.
+Provides custom SSO integration to [Laravel 5](https://laravel.com) applications.
 
 ## Where do I start?
 
@@ -44,6 +44,6 @@ if ($sso->valid() && $sso->isStaffMember) {
 }
 ```
 
-## Want to learn more?
+Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
 
-See our [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+[![Australia](https://danieltedman.com/images/Australia.png)](https://en.wikipedia.org/wiki/Australia)
