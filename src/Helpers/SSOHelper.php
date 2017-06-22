@@ -24,7 +24,7 @@ class SSOHelper
   /**
    * @var string Expected membership string for Staff.
    */
-  private static $STAFF_MEMBERSHIP = "General Staff (All)";
+  private static $STAFF_MEMBERSHIP = "Staff (All)";
 
   /**
    * @var array Raw SSO provided data.
