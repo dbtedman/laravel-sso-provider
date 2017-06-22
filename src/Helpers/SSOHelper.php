@@ -1,4 +1,5 @@
 <?php
+
 namespace DBTedman\SSOProvider\Helpers;
 
 /**
@@ -22,9 +23,13 @@ if (file_exists($ssoFunctions)) {
 class SSOHelper
 {
   /**
-   * @var string Expected membership string for Staff.
+   * @var string[] Expected membership string for Staff.
    */
-  private static $STAFF_MEMBERSHIP = "Staff (All)";
+  private static $STAFF_MEMBERSHIP = [
+    "Staff (All)",
+    "Academic Staff (All)",
+    "General Staff (All)"
+  ];
 
   /**
    * @var array Raw SSO provided data.
@@ -119,8 +124,10 @@ class SSOHelper
     }
 
     // Determine if user is a staff member.
-    if (in_array(self::$STAFF_MEMBERSHIP, $this->memberships)) {
-      $this->isStaffMember = true;
+    foreach (self::$STAFF_MEMBERSHIP as $staffMembership) {
+      if (in_array($staffMembership, $this->memberships)) {
+        $this->isStaffMember = true;
+      }
     }
   }
 
