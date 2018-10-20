@@ -1,19 +1,23 @@
 
 # Laravel SSO Provider
 
-[![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider) [![Packagist](https://img.shields.io/packagist/v/dbtedman/laravel-sso-provider.svg)](https://packagist.org/packages/dbtedman/laravel-sso-provider) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider)
 
 Provides custom SSO integration to [Laravel 5](https://laravel.com) applications.
 
 ## Where do I start?
 
-1\. Require the `dbtedman/laravel-sso-provider` package.
+### Require
+
+Require the package using Composer.
 
 ```bash
 composer require dbtedman/laravel-sso-provider
 ```
 
-2\. Use the library in your authentication controller.
+### Use
+
+Use the library in your authentication controller.
 
 ```php
 use DBTedman\SSOProvider\Helpers\SSOHelper;
@@ -44,22 +48,9 @@ if ($sso->valid() && $sso->isStaffMember) {
 }
 ```
 
-## Testing
+## Want to lean more?
 
-See [https://travis-ci.org/dbtedman/laravel-sso-provider](https://travis-ci.org/dbtedman/laravel-sso-provider) for CI results, run on each commit.
-
-### Unit Testing
-
-```bash
-composer run test
-```
-
-## Releasing
-
-Releases are automatically deployed to [Packagist](https://packagist.org/packages/dbtedman/laravel-sso-provider) from [Github](https://github.com/dbtedman/laravel-sso-provider).
-
----
-
-Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
-
-[![Australia](https://danieltedman.com/images/Australia.png)](https://en.wikipedia.org/wiki/Australia)
+* See our [Contributing Guide](CONTRIBUTING.md) for details on how this repository is developed.
+* See our [Changelog](CHANGELOG.md) for details on which features, improvements, and bug fixes have been implemented
+* See our [License](LICENSE.md) for details on how you can use the code in this repository.
+* See our [Security Guide](SECURITY.md) for details on how security is considered.

@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpUnusedParameterInspection */
 require __DIR__ . '/../vendor/autoload.php';
 
 // Simulate data that would normally be available.
@@ -8,16 +8,17 @@ $_SERVER["REQUEST_URI"] = "/login.php";
 
 function singleSignon($version, $something)
 {
-  return array(true, array(
-    "userid" => "s1234567",
-    "name" => "John Doe",
-    "raw" => array(
-      "mail" => "d.goe@example.com",
-      "groupMembership" => [
-        "General Staff (All)"
-      ],
-    )
-  ));
+    /** @noinspection SpellCheckingInspection */
+    return [true, [
+        "userid" => "s1234567",
+        "name" => "John Doe",
+        "raw" => [
+            "mail" => "d.goe@example.com",
+            "groupMembership" => [
+                "General Staff (All)"
+            ],
+        ]
+    ]];
 }
 
 function singleSignonRedirect($version = 1, $returnTo = "", $appName = "")
@@ -26,5 +27,5 @@ function singleSignonRedirect($version = 1, $returnTo = "", $appName = "")
 
 function getPSLogoutByEnv()
 {
-  return "https://localhost:8443/login.php";
+    return "https://localhost:8443/login.php";
 }

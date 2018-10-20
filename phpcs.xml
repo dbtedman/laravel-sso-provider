@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+
+  <!-- @See https://github.com/squizlabs/PHP_CodeSniffer/blob/master/phpcs.xml.dist for exemplar. -->
+  <!-- @see PHP_CodeSniffer\Standards namespace for available rules. -->
+
+  <!-- Validating http://www.php-fig.org/psr/psr-2/ -->
+  <rule ref="PSR2"/>
+  <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+  <!-- Reporting Configuration-->
+  <arg name="colors"/>
+  <arg name="error-severity" value="1"/>
+  <arg name="warning-severity" value="8"/>
+
+  <!-- Test Code -->
+  <file>./tests</file>
+
+  <!-- Application Code -->
+  <file>./src</file>
+
+</ruleset>
