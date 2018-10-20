@@ -5,11 +5,12 @@
 language: php
 
 php:
-  - "5.6"
+- "7.2"
 
 before_script:
-  - "composer self-update"
-  - "composer install --no-interaction"
+- "composer self-update"
+- "composer install --no-interaction"
 
 script:
-  - "composer run test"
+- "composer run lint"
+- "composer run test"

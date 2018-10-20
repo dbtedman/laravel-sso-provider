@@ -2,5 +2,8 @@
 # Git Ignore Config, https://git-scm.com/docs/gitignore.
 #
 
+# Allow scaffolding of empty directories.
+!.keep
+
 # Composer dependencies.
 /vendor/
