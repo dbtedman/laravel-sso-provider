@@ -5,6 +5,12 @@
 
 See [https://travis-ci.org/dbtedman/laravel-sso-provider](https://travis-ci.org/dbtedman/laravel-sso-provider) for CI results, run on each commit.
 
+### Linting
+
+```bash
+composer run lint
+```
+
 ### Unit Testing
 
 ```bash
