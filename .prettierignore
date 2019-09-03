@@ -1,11 +1,15 @@
 #-------------------------------------------------------------------------------
 #
-# Git Ignore Config, https://git-scm.com/docs/gitignore.
+# Prettier Ignores, https://prettier.io/docs/en/ignore.html
 #
 #-------------------------------------------------------------------------------
+
+# NPM dependencies
+/node_modules/
 
 # Composer dependencies
 /vendor/
 
-# NPM dependencies
-/node_modules/
+# Generated code
+/package-lock.json
+/composer.lock

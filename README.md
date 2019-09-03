@@ -1,7 +1,7 @@
+# [Laravel SSO Provider](https://github.com/dbtedman/laravel-sso-provider)
 
-# Laravel SSO Provider
-
-[![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider) [![Packagist](https://img.shields.io/packagist/v/dbtedman/laravel-sso-provider.svg)](https://packagist.org/packages/dbtedman/laravel-sso-provider) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider)
+[![Packagist](https://img.shields.io/packagist/v/dbtedman/laravel-sso-provider.svg)](https://packagist.org/packages/dbtedman/laravel-sso-provider)
 
 Provides custom SSO integration to [Laravel 5](https://laravel.com) applications.
 
@@ -23,7 +23,7 @@ $sso = SSOHelper::login();
 if ($sso->valid() && $sso->isStaffMember) {
   // Assumes you have a method defined elsewhere which returns an existing User object.
   $thisUser = findUserByStaffNumber($sso->staffNumber);
-    
+
   if ($thisUser == null) {
     // We could not find user so lets create them.
     $thisUser = new User;
@@ -34,7 +34,7 @@ if ($sso->valid() && $sso->isStaffMember) {
   $thisUser->full_name = $sso->fullName;
   $thisUser->email = $sso->email;
 
-  // Save any changes made to the user. 
+  // Save any changes made to the user.
   $thisUser->save();
 
   if ($thisUser != null) {
@@ -44,22 +44,13 @@ if ($sso->valid() && $sso->isStaffMember) {
 }
 ```
 
-## Testing
+## Want to lean more?
 
-See [https://travis-ci.org/dbtedman/laravel-sso-provider](https://travis-ci.org/dbtedman/laravel-sso-provider) for CI results, run on each commit.
-
-### Unit Testing
-
-```bash
-composer run test
-```
-
-## Releasing
-
-Releases are automatically deployed to [Packagist](https://packagist.org/packages/dbtedman/laravel-sso-provider) from [Github](https://github.com/dbtedman/laravel-sso-provider).
-
----
-
-Created [Down Under](https://en.wikipedia.org/wiki/Australia) by [Daniel Tedman](https://danieltedman.com).
-
-[![Australia](https://danieltedman.com/images/Australia.png)](https://en.wikipedia.org/wiki/Australia)
+-   See our [Contributing Guide](CONTRIBUTING.md) for details on how this
+    repository is developed.
+-   See our [Changelog](CHANGELOG.md) for details on which features,
+    improvements, and bug fixes have been implemented
+-   See our [License](LICENSE.md) for details on how you can use the code in
+    this repository.
+-   See our [Security Guide](SECURITY.md) for details on how security is
+    considered.

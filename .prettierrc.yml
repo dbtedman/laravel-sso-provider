@@ -1,7 +1,6 @@
 #-------------------------------------------------------------------------------
 #
-# Git Ignore Config, https://git-scm.com/docs/gitattributes.
+# Prettier Configuration, https://prettier.io/docs/en/configuration.html
 #
 #-------------------------------------------------------------------------------
-
-* text=auto
+---

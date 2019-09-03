@@ -1,6 +1,8 @@
+#-------------------------------------------------------------------------------
 #
 # EditorConfig, http://editorconfig.org/.
 #
+#-------------------------------------------------------------------------------
 
 root = true
 
@@ -12,5 +14,5 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{py,md}]
+[*.{md, php}]
 indent_size = 4
