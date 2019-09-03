@@ -24,6 +24,9 @@ function singleSignon($version, $something)
 
 function singleSignonRedirect($version = 1, $returnTo = "", $appName = "")
 {
+    // These properties are set as user is redirected back so lets simulate here.
+    $_GET["REF"] = "example";
+    $_COOKIE["setSSO"] = true;
 }
 
 function getPSLogoutByEnv()

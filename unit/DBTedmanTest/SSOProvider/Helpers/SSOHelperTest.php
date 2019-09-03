@@ -34,19 +34,29 @@ class SSOHelperTest extends TestCase
         );
     }
 
-//    public function testResult(): void
-//    {
-//        // TODO: Has issues now that we are checking for cookies and GET parameters that will need to be simulated.
-//            $this->assertTrue(property_exists($this->sso, "result"), "SSOHelper->result should exist.");
-//            $this->assertTrue(is_array($this->sso->result), "SSOHelper->result should be an array.");
-//    }
+    public function testResult(): void
+    {
+        $this->assertTrue(
+            property_exists($this->sso, "result"),
+            "SSOHelper->result should exist."
+        );
+        $this->assertTrue(
+            is_array($this->sso->result),
+            "SSOHelper->result should be an array."
+        );
+    }
 
-//    public function testOk(): void
-//    {
-//        // TODO: Has issues now that we are checking for cookies and GET parameters that will need to be simulated.
-//        $this->assertTrue(property_exists($this->sso, "ok"), "SSOHelper->ok should exist.");
-//        $this->assertTrue(is_bool($this->sso->ok), "SSOHelper->ok should be a bool.");
-//    }
+    public function testOk(): void
+    {
+        $this->assertTrue(
+            property_exists($this->sso, "ok"),
+            "SSOHelper->ok should exist."
+        );
+        $this->assertTrue(
+            is_bool($this->sso->ok),
+            "SSOHelper->ok should be a bool."
+        );
+    }
 
     public function testStaffNumber(): void
     {
