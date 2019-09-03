@@ -9,3 +9,6 @@
 
 # NPM dependencies
 /node_modules/
+
+# Test junk
+/*.cache
