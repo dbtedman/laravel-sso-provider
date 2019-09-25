@@ -7,13 +7,17 @@ Provides custom SSO integration to [Laravel 5](https://laravel.com) applications
 
 ## Where do I start?
 
-1\. Require the `dbtedman/laravel-sso-provider` package.
+### Require
+
+Require the `dbtedman/laravel-sso-provider` package.
 
 ```bash
 composer require dbtedman/laravel-sso-provider
 ```
 
-2\. Use the library in your authentication controller.
+### Use
+
+Use the library in your authentication controller.
 
 ```php
 use DBTedman\SSOProvider\Helpers\SSOHelper;

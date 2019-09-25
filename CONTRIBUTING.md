@@ -1,10 +1,11 @@
 # [Laravel SSO Provider](./README.md) / Contributing
 
+-   [Testing](#testing)
+-   [Releasing](#releasing)
+
 ## Testing
 
 See [https://travis-ci.org/dbtedman/laravel-sso-provider](https://travis-ci.org/dbtedman/laravel-sso-provider) for CI results, run on each commit.
-
-### Unit Testing
 
 ```bash
 composer run test:cover
@@ -13,11 +14,14 @@ composer run test:cover
 or
 
 ```bash
-# Build custom php+composer+xdebug.
-docker build -t composer-xdebug:latest .
-
-# Use custom built image to run test suite with coverage.
-docker run -it -v "$PWD":/app -w /app --user www-data --rm composer-xdebug:latest composer run test:cover
+docker run \
+    -it \
+    -v "$PWD":/app \
+    -w /app \
+    --user www-data \
+    --rm \
+    $(docker build --quiet .) \
+    composer run test:cover
 ```
 
 ## Releasing

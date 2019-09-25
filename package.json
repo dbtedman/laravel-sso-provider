@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "_prettier": "prettier './{**/,/}*.{js,md,yml,yaml,json}'",
-    "audit": "npm run audit::composer && npm run audit::docker && npm run audit::npm",
+    "audit": "npm run audit::composer && npm run audit::npm",
+    "audit::composer": "snyk test --dev --file=./composer.lock",
     "audit::npm": "snyk test --dev --file=./package-lock.json",
     "format": "npm run _prettier -- --write",
     "lint": "npm run _prettier -- --check"

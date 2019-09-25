@@ -19,11 +19,3 @@ Using [Snyk](https://snyk.io/)
 ```bash
 npm run audit::composer
 ```
-
-### Docker
-
-Using [Snyk](https://snyk.io/)
-
-```bash
-npm run audit::docker
-```
