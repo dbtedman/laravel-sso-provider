@@ -14,5 +14,4 @@ before_script:
   - "composer install --no-interaction"
 
 script:
-  - "php -i"
-  - "composer run test"
+  - "composer run test:cover"
