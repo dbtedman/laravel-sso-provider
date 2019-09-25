@@ -5,6 +5,7 @@
   "version": "2.0.0",
   "scripts": {
     "test": "@php vendor/bin/phpunit",
+    "test:cover": "@php vendor/bin/phpunit --coverage-text",
     "lint": "@php vendor/bin/phpcs -p",
     "format": "@php vendor/bin/phpcbf"
   },
@@ -18,11 +19,6 @@
   "autoload": {
     "psr-4": {
       "DBTedman\\": "src/DBTedman/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "DBTedmanTest\\": "unit/DBTedmanTest/"
     }
   }
 }

@@ -1,9 +1,8 @@
 <?php
 declare(strict_types=1);
 
-namespace DBTedmanTest\SSOProvider\Helpers;
+namespace DBTedman\SSOProvider\Helpers;
 
-use DBTedman\SSOProvider\Helpers\SSOHelper;
 use PHPUnit\Framework\TestCase;
 
 class SSOHelperTest extends TestCase

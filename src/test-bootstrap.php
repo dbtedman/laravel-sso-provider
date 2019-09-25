@@ -8,6 +8,11 @@ $_SERVER["HTTP_HOST"] = "localhost";
 $_SERVER["SERVER_PORT"] = "8443";
 $_SERVER["REQUEST_URI"] = "/login.php";
 
+/**
+ * @param $version
+ * @param $something
+ * @return array
+ */
 function singleSignon($version, $something)
 {
     return [true, [
@@ -22,6 +27,11 @@ function singleSignon($version, $something)
     ]];
 }
 
+/**
+ * @param int $version
+ * @param string $returnTo
+ * @param string $appName
+ */
 function singleSignonRedirect($version = 1, $returnTo = "", $appName = "")
 {
     // These properties are set as user is redirected back so lets simulate here.
@@ -29,6 +39,9 @@ function singleSignonRedirect($version = 1, $returnTo = "", $appName = "")
     $_COOKIE["setSSO"] = true;
 }
 
+/**
+ * @return string
+ */
 function getPSLogoutByEnv()
 {
     return "https://localhost:8443/login.php";

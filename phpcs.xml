@@ -13,9 +13,6 @@
   <arg name="error-severity" value="1"/>
   <arg name="warning-severity" value="8"/>
 
-  <!-- Application Code -->
+  <!-- Source Code -->
   <file>./src</file>
-
-  <!-- Test Code -->
-  <file>./unit</file>
 </ruleset>
