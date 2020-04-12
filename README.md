@@ -1,7 +1,6 @@
 # [Laravel SSO Provider](https://github.com/dbtedman/laravel-sso-provider)
 
-[![Build Status](https://travis-ci.org/dbtedman/laravel-sso-provider.svg?branch=master)](https://travis-ci.org/dbtedman/laravel-sso-provider)
-[![Packagist](https://img.shields.io/packagist/v/dbtedman/laravel-sso-provider.svg)](https://packagist.org/packages/dbtedman/laravel-sso-provider)
+> This project is no longer maintained.
 
 Provides custom SSO integration to [Laravel 5](https://laravel.com) applications.
 
